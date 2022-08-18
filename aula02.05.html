@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var num1 = prompt("digite um número");
+        num1 = parseFloat(num1); /* transforma o texto digitado em um numero real */
+
+        var num2 = prompt("digite outro número");
+        num2 = parseFloat(num2); /* transforma o texto digitado em um numero real */
+
+        var media = (num1 + num2) / 2;
+
+        if(media >= 9) {
+            alert("Nota final: " + media + " !!" + " Excelente, você foi aprovado em alto nível!")
+        }
+        else if (media > 7 < 9){
+                alert("Nota final: " + media + " !!" + " Parabéns, você foi aprovado!")
+        }
+    </script>
+
+</body>
+</html>
