@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var numerodigitado = prompt ("digite um número de 1 à 5");
+        numerodigitado = parseInt(numerodigitado);
+
+        switch(numerodigitado){
+            case 1:
+                alert("O primeiro");
+                break; /* finaliza a estrutura e dá continuação no código */
+            case 2:
+                alert("O segundo");
+                break;
+            case 3:
+                alert("O terceiro");
+                break;
+            case 4:
+                alert("O quarto");
+                break;
+            case 5:
+                alert("O quinto");
+                break;
+            default:
+                alert("Número inválido. Digite um número de 1 à 5");
+                /* default não precisa do break */
+        }
+
+    </script>
+    
+</body>
+</html>

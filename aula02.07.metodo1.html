@@ -14,12 +14,15 @@
         var nota2 = prompt ("Digite a segunda nota")
         var nota2 = parseInt (nota2)
 
-        if (nota1 > 0 && nota2 > 0 && (nota1 + nota2 !== 0)) {
-            alert("Parabéns! Você foi aprovado.")
+        if (nota1 === 0 || nota2 === 0 || (nota2 + nota1) / 2 < 5) {
+            alert("Reprovado")
+            /* se a nota 1 for igual a 0 OU a nota 2 igual a 0 OU a soma da nota 2 e 1 divididas por 2 forem menor que 5 */
         }
         else {
-            alert("Você foi reprovado!")
+            alert("Aprovado")
         }
+       
+        
     </script>
 </body>
 </html>
