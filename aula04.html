@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { 
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+    <button onclick="mostrarTabuada()">Criar Tabuada</button>
+    <button onclick="limparTabuada()">Limpar Tabuada</button>
+
+    <div id="output"></div>
+    
+    <script>
+
+        function mostrarTabuada() {
+            var numeroDigitado = prompt('digite um número');
+            numeroDigitado = parseInt(numeroDigitado);
+            limparTabuada();
+
+            var multiplicador = 1;
+
+            while (multiplicador < 11) {
+                mensagem += numeroDigitado + ' x ' + multiplicador + ' = ' + (numeroDigitado * multiplicador) + '<br>';
+                multiplicador++;
+            }  
+
+            output.innerHTML = mensagem; //confuso,. nao entendi :X
+        }
+
+        function limparTabuada() {
+            mensagem = '';
+            output.innerHTML = mensagem;
+        }
+        
+        var output = document.querySelector('#output'); // variavel output recebe #output [não tenho certeza/confuso]
+
+        var mensagem = ''; //confuso... se dentro do script /linha34/ a var mensagem ja recebeu um conteudo, por que inserir novamente um conteuido após?
+        
+        
+    </script>
+</body>
+</html>
