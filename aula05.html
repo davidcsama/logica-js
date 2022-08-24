@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       button {
+        color: white;
+        background-color: blueviolet;
+        width: 100px;
+        height: 50px;
+        margin: 20px;
+       }
+
+    </style>
+</head>
+<body>
+
+    <div class="calculadora">
+
+        <div class="botoesdireita">
+            <ul type="none">
+
+            <li> <button onclick="dividir()">/</button></li>
+            <li> <button onclick="multiplicar()">X</button> </li>
+            <li> <button onclick="diminuir()">-</button> </li>
+            <li> <button onclick="somar()">+</button> </li>
+        
+            </ul>
+        </div>
+
+    </div>
+
+    <br>
+
+    <div id="output"></div>
+
+        <script>
+
+            var numeroDigitado = parseInt(prompt('digite um numero'));
+            escreve();
+
+            var resultado = ('O resultado é :');
+
+            function escreve() {
+                var output = document.getElementById('output');
+                output.innerHTML = numeroDigitado;
+            }
+           
+        
+            function somar() {
+                var numero2 = parseInt(prompt('digite outro numero'));
+                // numeroDigitado = numeroDigitado + numero2;
+                numeroDigitado += numero2; /* short */
+                escreve();
+            }
+            
+            function diminuir() {
+                var numero2 = parseInt(prompt('digite outro numero'));
+                //numeroDigitado = numeroDigitado - numero2;
+                numeroDigitado -= numero2; /* short */
+                escreve();
+            }
+            
+            function multiplicar () {
+                var numero2 = parseInt(prompt('digite outro numero'));
+                //numeroDigitado = numeroDigitado * numero2;
+                numeroDigitado *= numero2; /* short */
+                escreve();
+            }
+            
+            function dividir() {
+                var numero2 = parseInt(prompt('digite outro numero'));
+                //numeroDigitado = numeroDigitado / numero2;
+                numeroDigitado /= numero2; /* short */
+                escreve();
+            }
+
+
+        
+        </script>
+    
+</body>
+</html>
